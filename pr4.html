@@ -1,165 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical 4</title>
-    <link rel="stylesheet" href="./practical4.css">
-    <style>
-    *
-{
-    background:pink;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0; 
-}
-.header
-{
-    width: 100%;
-    height: 102px;
-    background: black;
-    opacity: .6;
-}
-#logo
-{
-    height: 100px;
-    background: transparent;
-}
-#websiteName
-{
-    position: absolute;
-    top: 12px;
-    left: 105px;
-    background: transparent;
-    color: white;
-}
-#subscript
-{
-    background: transparent;
-}
-#navBar
-{
-    list-style: none;
-    background: transparent;
-    color: white;
-    float: right;
-    margin-right: 10px;
-    font-size: 22px;
-    margin-top: 30px;
-}
-#navBar li
-{
-    display: inline;
-    background: transparent;
-}
-.mainContainer
-{
-    width: 100%;
-    height: 500px;
-    background: black;
-    opacity: .6;
-    margin-top: 10px;
-    padding-top: 5px;
-}
-#col1,#col2,#col3
-{
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 30%;
-    height: 450px;
-    background-color: black;
-    opacity: .6;
-    border-color: white;
-    border-radius: 12px;
-}
-#col2
-{
-    position: absolute;
-    top: 117px;
-    left: 388px;
-}
-#col3
-{
-    position: absolute;
-    top: 117px;
-    right: -20px;
-}
-#documentlogo, #skilllogo, #certificatelogo
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-    height: 100px;
-    width: 100px;
-    background: transparent;
-}
-.footer
-{
-    width: 100%;
-    height: 100px;
-    background: black;
-    opacity: .6;
-    margin-top: 10px;
-}
-#text1
-{
-    position: absolute;
-    background: transparent;
-    color: white;
-    top: 666px;
-    left: 5%;
-}
-#searchBar
-{
-    background-color: black;
-    opacity: .6;
-    color: black;
-    width: 20%;
-    height: 25px;
-    border-radius: 12px;
-    border: 5px solid black;
-    margin-left: 250px;
-    margin-top: 40px;
-    padding: 5px;
-}
-#button
-{
-    width: 60px;
-    padding: 4px;
-    color: white;
-    border-radius: 20px;
-}
-a:link
-{
-    background: transparent;
-    color: white;
-    text-decoration: none;
-}
-</style>
+    <title style="margin: 15px;">HTML Table</title>
 </head>
+<h2>
 <body>
-    <div class="header">
-        <img id="logo" src="./code.png" alt="Logo">
-        <h1 id="websiteName">Krupa patel </h1>
-        <ul id="navbar">
-            <li>HOME</li>
-            <li>TOPICS</li>
-            <li>ABOUT US</li>
-        </ul>
-    </div>
-    <div class="Container">
-        <div id="col1">
-            
-        </div>
-        <div id="col2">
-            
-        </div>
-    </div>
-    <div class="footer"></div>
-        <input type="search" id="searchBar">
-        <input id="button" type="button" value="Search">
-    </div>
+    <h3>HTML Table</h3>
+    <table border="1" width="100%">
+
+        <tr>
+            <td>
+                <table border="1" width="100%">
+                    <tr>
+                        <th>Name</th>
+                        <th>Salary</th>
+                    </tr>
+                    <tr>
+                        <td>Ramesh Raman</td>
+                        <td>5000</td>
+                    </tr>
+                    <tr>
+                        <td>Shabbir Hussein</td>
+                        <td>7000</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <h3>HTML FOrm</h3>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <p>
+                <label>
+                    Salutation
+                    <br />
+                    <select name="salutation">
+                        <option>--None--</option>
+                        <option>Mr.</option>
+                        <option>Ms.</option>
+                        <option>Mrs.</option>
+                        <option>Dr.</option>
+                        <option>Prof.</option>
+                    </select>
+                </label>
+                <br>
+                <label>First name: <input name="firstName" /></label><br>
+                <label>Last name: <input name="lastName" /></label><br>
+
+                Gender : <br>
+                <label><input type="radio" name="gender" value="male" /> Male</label><br>
+                <label><input type="radio" name="gender" value="female" /> Female</label><br>
+                <label>Email:<input type="email" name="email" /></label><br>
+                <label>Date of Birth:<input type="date" name="birthDate"></label><br>
+                <label>
+                    Address :
+                    <br />
+                    <textarea name="address" cols="30" rows="3"></textarea>
+                </label>
+                <button type="submit">Submit</button>
+
+
+            </p>
+        </fieldset>
+    </form>
 </body>
+</h2>
 </html>
