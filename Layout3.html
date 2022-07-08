@@ -1,126 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display</title>
-    <style>
-            .container{
-                display: flex;
-                
-                
-            }
-            .clas{
-                border: 2px solid greenyellow;
-                height: 160px;
-                width: 360px;
-                margin-left: 5px;
-                margin-bottom: 10px;
-                background-color: black;
-                color: white;
-                text-align: center;
-                font-size: 30px;
-            }
-            .container2{
-                display: flex;
-                
-            }
-            .class{
-                border: 2px solid greenyellow;
-                height: 160px;
-                width: 360px;
-                margin-left: 5px;
-                margin-bottom: 10px;
-                background-color: black;
-                color: white;
-                text-align: center;
-                font-size: 30px;
-            }
-            .container3{
-                display: flex;
-                
-            }
-            .classs{
-                border: 2px solid greenyellow;
-                height: 160px;
-                width: 360px;
-                margin-left: 5px;
-                margin-bottom: 10px;
-                background-color: black;
-                color: white;
-                text-align: center;
-                font-size: 30px;
-                justify-content: center;
-            }
-            .cont{
-               display: flex;
-               
-            }
-            .container4{
-                display: flex;
-                
-                
-            }
+    <title>Layout3</title>
+    <style type="text/css">
+        * {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .header{
+            background-color: rgb(255, 1, 1);
+            padding-top: 20px;
+            padding-left: 2%;
+            margin-bottom: 1%;
+            width: 98%;
+            height: 50px;
+        }
+        .header:hover{
+            color: blanchedalmond;
+            background-color: gold;
+        }
+
+        .nav,#R2 {
+            background-color: rgb(77, 0, 0);
+            padding-top: 7px;
+            margin-bottom: 1%;
+            width: 100%;
+            height: 33px;
+            text-align: center;
+        }
+        #R2:hover{
+            background-color: darkcyan;
+            color: rgb(4, 7, 36);
+        }
+        .nav:hover{
+            background-color: rgb(139, 56, 0);
+            color: rgb(1, 4, 27);
+        }
+
+        .menu {
+            background-color: rgb(0, 255, 149);
+            padding-top: 20px;
+            margin-bottom: 1%;
+            width: 100%;
+            height: 60px;
+            text-align: center;
+        }
+
+        #R2{
+            clear: both;
+        }
+
+        #R1{
+            height: 600;
+            width: 100%;
+        }
+
+        #R1C1,
+        #R1C2,
+        #R1C3 {
+            height: 300px;
+            background-color: rgb(91, 169, 62);
+            padding-top: 200PX;
+            float: left;
+            margin-bottom: 5%;
+            text-align: center;
             
-            .cla{
-                border: 2px solid greenyellow;
-                width: 360px;
-                height: 160px;
-                margin-left: 5px ;
-                margin-bottom: 10px;
-                background-color: black;
-                color: white;
-                text-align: center;
-                font-size: 30px;
-            }
-.cla:hover{
-                background-color: rgb(29, 3, 49);
-            }
-            .classs:hover{
-                background-color: rgb(29, 3, 49);
-            }
-            .class:hover{
-                background-color: rgb(29, 3, 49);
-            }
-           .clas:hover{
-            background-color: rgb(29, 3, 49);
-           } 
+        }
 
+        #R1C1 {
+            width: 33%;
+            margin-right: .33%;
+            margin-bottom: 1%;
+        }
 
+        #R1C2 {
+            width: 33%;
+            margin-right: .33%;
+            margin-bottom: 1%;
+        }
 
-
+        #R1C3 {
+            width: 33%;
+            margin-right: .33%;
+            margin-bottom: 1%;
+        }
     </style>
 </head>
-<body>
 
-    <div class="container">
-         <div class="class">1</div>
-         <div class="class">2</div>
-         <div class="class">3</div>
-         <div class="class">4</div>
+<body>
+    <div>
+        <div class="header"><marquee >LOGO</marquee> </div>
+        <div class="nav">Navigation</div>
+        <div class="menu">Header/Banner</div>
+        <div id="R1">
+            <div id="R1C1">Box 1 </div>
+            <div id="R1C2">Box 2</div>
+            <div id="R1C3">Box 3</div>
+        </div>
+        <div id="R2">Footer</div>
     </div>
-    <div class="container2">
-        
-        <div class="class">5</div>
-        <div class="class">6</div>
-        <div class="class">7</div>
-        <div class="class">8</div>
-    </div>
-    <div class="container3">
-        
-        <div class="classs">9</div>
-        <div class="classs">10</div>
-        <div class="classs">11</div>
-        <div class="classs">12</div>
-    </div>
-    <div class="container4">
-        <div class="cla">13</div>
-        <div class="cla">14</div>
-        <div class="cla">15</div>
-        <div class="cla">16</div>
-    </div>
-    
 
 </body>
+
 </html>
