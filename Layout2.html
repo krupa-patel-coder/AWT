@@ -6,6 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout2</title>
+    <style type="text/css">
+        *{font-size:22px;font-weight:bold;}
+        #R2{height:800px;width:100%;}
+        #R2C1,#R2C2{height:800px;float:left;}
+        #R2C1{width:30%; background-color: pink;}
+        #R2C2{width:70%; background-color: pink;}
+        #R2C2R1{height:160px;padding-top:130px;margin-bottom:10px;background-color:blue;text-align:center;}
+        #R2C2R2{height:270px;padding-top:230px;background-color:tomato;text-align:center;}
+    </style>
+    
     <style>
         .id1{
             background-color: rgb(136, 104, 0);
@@ -35,82 +45,6 @@
             text-align: center;
             margin-bottom: 10px;
         }
-
-        .container {
-            display: flex;
-
-
-        }
-
-        .clas {
-            border: 2px solid greenyellow;
-            height: 160px;
-            width: 360px;
-            margin-left: 5px;
-            margin-bottom: 10px;
-            background-color: black;
-            color: white;
-            text-align: center;
-            font-size: 30px;
-        }
-
-        .container2 {
-            display: flex;
-
-        }
-
-        .class {
-            border: 2px solid greenyellow;
-            height: 160px;
-            width: 360px;
-            margin-left: 5px;
-            margin-bottom: 10px;
-            background-color: black;
-            color: white;
-            text-align: center;
-            font-size: 30px;
-        }
-
-        .container3 {
-            display: flex;
-
-        }
-
-        .classs {
-            border: 2px solid greenyellow;
-            height: 160px;
-            width: 360px;
-            margin-left: 5px;
-            margin-bottom: 10px;
-            background-color: black;
-            color: white;
-            text-align: center;
-            font-size: 30px;
-            justify-content: center;
-        }
-
-        .cont {
-            display: flex;
-
-        }
-
-        .container4 {
-            display: flex;
-
-
-        }
-
-        .cla {
-            border: 2px solid greenyellow;
-            width: 360px;
-            height: 160px;
-            margin-left: 5px;
-            margin-bottom: 10px;
-            background-color: black;
-            color: white;
-            text-align: center;
-            font-size: 30px;
-        }
     </style>
 </head>
 
@@ -122,32 +56,16 @@
         <div class="id2">
              navbar
         </div>
-        <div class="container">
-            <div class="class">1</div>
-            <div class="class">2</div>
-            <div class="class">3</div>
-            <div class="class">4</div>
-        </div>
-        <div class="container2">
-
-            <div class="class">5</div>
-            <div class="class">6</div>
-            <div class="class">7</div>
-            <div class="class">8</div>
-        </div>
-        <div class="container3">
-
-            <div class="classs">9</div>
-            <div class="classs">10</div>
-            <div class="classs">11</div>
-            <div class="classs">12</div>
-        </div>
-        <div class="container4">
-            <div class="cla">13</div>
-            <div class="cla">14</div>
-            <div class="cla">15</div>
-            <div class="cla">16</div>
-        </div>
+    
+		<div id="R2">
+			<div id="R2C1">
+				Side Bar Navigation
+			</div>
+			<div id="R2C2">
+				<div id="R2C2R1">Header / Banner</div>
+				<div id="R2C2R2">Body Area</div>
+			</div>
+		</div>
         <div class="id3">
            footer
         </div>
