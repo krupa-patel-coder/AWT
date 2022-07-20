@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+<script>
+$(document).ready(function(){
+$(".each_ex").click(function(){
+
+$("li").each(function(){
+alert($(this).text());
+$('div > ul > li > a').css("background-color","pink");
+});
+});
+});
+</script>
+
+
+<style>
+.men_ex{
+    border-radius:10px;
+    
+}
+.men_ex ul {
+    margin: 0; 
+    padding: 20px;
+    width:250px;
+    list-style-type: none;
+    
+}
+
+.men_ex ul li a {
+    text-decoration: none;
+    color: #fff; 
+    padding: 10.5px 11px;
+    background-color: #19a7da;
+    display:block;
+    border-bottom:solid 1px #000;
+    text-align: center;
+}
+/* text color */
+.men_ex ul li a {
+    color: white;
+}
+
+.men_ex ul li a:hover, .men_ex ul li .current {
+    color: #000;
+    background-color: #FBE9AC;
+}
+
+.show_hide{
+   position:fixed;
+   margin: 30px 30px;
+}
+</style>
+</head>
+
+<body>
+<div class="men_ex">
+<ul>
+<li><a href="#">Python</a></li>
+<li><a href="#">Java</a></li>
+<li><a href="#">JavaScript</a></li>
+<li><a href="#">JQuery</a></li>
+<li><a href="#">Php</a></li>
+</ul>
+</div>
+<a href="#" class="each_ex">Execute each method</a> 
+
+</body>
+</html>
+
