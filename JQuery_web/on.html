@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+<script>
+$(document).ready(function(){
+  $("div").on("customEvent", function(e, show){
+    $(this).text("Welcome to the " + show).show();
+  });
+  $("button").click(function(){
+    $("div").trigger("customEvent", ["jquery world"]);
+  });
+});
+</script>
+</head>
+<body>
+<h2> It is an example of using the jQuery on() method. </h2>
+<div> This is a div element. </div>
+<p> Click the following button to see the effect. </p>
+<button> Click me </button>
+</body>
+</html>
+
+ 

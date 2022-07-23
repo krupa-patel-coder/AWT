@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+<title>jQuery Testing</title>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $("p").hide();
+      });
+      $("#show").click(function(){
+        $("p").show();
+      });
+    });
+    </script>
+    <script>
+        $(document).ready(function() {
+          $(".hidediv").click(function () {
+          $(".divdemo").hide("slow");
+         });
+     
+          $(".showdiv").click(function () {
+          $(".divdemo").show(2000);
+         });
+     
+        });
+     
+     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('#btn1').on("click",function(e){
+       $('#myImg1').toggle('slow');
+      });
+    });
+    $(document).ready(function(){
+      $('#btn2').on("click",function(e){
+       $('#myImg2').toggle('slow');
+      });
+    });
+    $(document).ready(function(){
+      $('#btn3').on("click",function(e){
+       $('#myImg3').toggle('slow');
+      });
+    });
+    $(document).ready(function(){
+      $('#btn4').on("click",function(e){
+       $('#myImg4').toggle('slow');
+      });
+    });
+    </script>
+<style>
+.divdemo{
+width:100%;
+height: 100%;
+background-color:#9f07ba;
+color:#fff;
+padding:100px;
+font-size:25px;
+}
+.hidediv,.showdiv{
+    background-color:aqua;
+    text-shadow: #9f07ba;
+}
+.hidediv:hover,.showdiv:hover{
+    background-color: black;
+    color: #fff;
+    font-size: x-large;
+}
+</style>
+</head>
+
+<body>
+<p><button class="hidediv">Hide div</button>
+<button class="showdiv">Show div</button>
+</p>    
+   <div class="divdemo">
+    
+    <h5>jQuery </h5>
+    <button type="button" id="btn1">Show/Hide Image</button>
+    <img src="jq.png" style="width: 500px;" alt="Show/Hide Image" id="myImg1"/>
+    <h5>Html </h5>
+    <button type="button" id="btn2">Show/Hide Image</button>
+    <img src="html.jpg"style="width: 500px;" alt="Show/Hide Image" id="myImg2"/>
+
+    <h5>css </h5>
+    <button type="button" id="btn3">Show/Hide Image</button>
+    <img src="css.jpeg"style="width: 500px;" alt="Show/Hide Image" id="myImg3"/>
+
+    <h5>javascript</h5>
+    <button type="button" id="btn4">Show/Hide Image</button>
+    <img src="js.jpg" style="width: 500px;"alt="Show/Hide Image" id="myImg4"/>
+
+
+   </div>
+
+</body>
+</html>
+

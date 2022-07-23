@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("p").append(" <b>NEWLY ADDED TEXT</b>.");
+            });
+            $("#btn2").click(function () {
+                $("ol").append("<li><b>NEWLY ADDED SUBJECT</b></li>");
+            });
+        });  
+    </script>
+    <style>
+        .p1 {
+            color: brown;
+        }
+
+        .p2 {
+            color: blue;
+
+        }
+
+        .sub {
+            border:5px double;
+            border-color: black;
+            background-color: darksalmon;
+            color: black;
+            width: 50%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, id qui voluptatibus distinctio dolorum
+        saepe reiciendis sit voluptates doloribus...</p>
+    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi facere quidem officia. Quibusdam
+        quaerat dolor vel minus accusantium aspernatur!.</p>
+    <ol class="sub">
+        <li>PYTHON</li>
+        <li>JAVA</li>
+        <li>JavaScript</li>
+    </ol>
+    <button id="btn1">Append text</button>
+    <button id="btn2">Append item</button>
+</body>
+
+</html>
